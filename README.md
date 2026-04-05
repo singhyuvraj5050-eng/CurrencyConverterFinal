@@ -28,10 +28,3 @@ Euro             EUR                 €
 British Pound    GBP                 £
 Japanese Yen     JPY                 ¥
 
-📁 Project Structure
-CurrencyConverter/
-│
-├── index.html       # Main HTML structure
-├── style.css        # All styling & dark mode
-├── new.js           # JavaScript logic & API calls
-└── README.md        # Project documentation

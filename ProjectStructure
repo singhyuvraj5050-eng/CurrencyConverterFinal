@@ -1,0 +1,7 @@
+📁 Project Structure
+CurrencyConverter/
+│
+├── index.html       # Main HTML structure
+├── style.css        # All styling & dark mode
+├── new.js           # JavaScript logic & API calls
+└── README.md        # Project documentation
