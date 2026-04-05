@@ -19,3 +19,11 @@ CSS3- Styling, animations, dark mode
 JavaScript-  (ES6+)Logic, API calls, DOM manipulation
 ExchangeRate APILive currency rates
 FlagsAPICountry flag images
+
+💱 Supported Currencies
+Currency         Code              Symbol
+Indian Rupee     INR           ₹
+US Dollar        USD                 $
+Euro             EUR                 €
+British Pound    GBP                 £
+Japanese Yen     JPY                 ¥
