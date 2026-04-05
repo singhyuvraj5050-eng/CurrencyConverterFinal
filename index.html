@@ -1,1 +1,92 @@
-<pr>HELL0 YUVRAJ </pr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="converter">
+
+  <!-- Dark mode toggle (left) -->
+  <div class="top-left-controls">
+    <div class="toggle-btn" id="darkToggle">
+      <span>🌙</span><span>☀</span>
+      <div class="toggle-circle"></div>
+    </div>
+  </div>
+
+  <!-- Calculator toggle (right) -->
+  <div class="top-right-controls">
+    <div class="calc-btn" id="calcToggle">
+      <span>🧮</span>
+      <div class="calc-circle"></div>
+    </div>
+  </div>
+
+  <!-- Calculator popup -->
+  <div class="calc-popup" id="calcPopup">
+    <input class="calc-display" id="calcDisplay" disabled />
+    <div class="calc-grid">
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('/')">÷</button>
+
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('*')">×</button>
+
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('-')">−</button>
+
+      <button onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="press('+')">+</button>
+
+      <button onclick="clearCalc()" style="grid-column: span 4; background:#ffbbbb;">C</button>
+    </div>
+  </div>
+
+  <h2>Currency Converter</h2>
+
+  <label>Amount</label>
+  <input type="number" id="amount" placeholder="Enter amount" />
+
+  <label>From</label>
+  <div class="currency-select-box">
+    <div class="selected-currency" id="fromSelected" data-code="INR">
+      <img src="https://flagsapi.com/IN/flat/64.png" alt="INR flag">
+      INR
+    </div>
+    <div class="currency-list" id="fromList"></div>
+  </div>
+
+  <div class="swap-row">
+    <button class="swap-btn" id="swapBtn">⇅</button>
+  </div>
+
+  <label>To</label>
+  <div class="currency-select-box">
+    <div class="selected-currency" id="toSelected" data-code="USD">
+      <img src="https://flagsapi.com/US/flat/64.png" alt="USD flag">
+      USD
+    </div>
+    <div class="currency-list" id="toList"></div>
+  </div>
+
+  <button class="convert" id="convertBtn">Convert</button>
+
+  <div class="result-box" id="result"></div>
+</div>
+
+<script src="new.js"></script>
+</body>
+</html>
